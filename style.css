@@ -11,6 +11,7 @@ header {
     padding: 20px;
     text-align: center;
     position: relative;
+    
 }
 
 header img {
@@ -33,14 +34,19 @@ header img {
     background-color: white;
     margin: 4px 0;
 }
-
-
+#nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
 .nav-list {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
+    align-items: center;
 }
 
 .nav-list li {
@@ -72,18 +78,21 @@ footer {
     bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .menu-icon {
         display: flex;
     }
+    body{
+        width: 90%;
+    }
     nav {
-        display: flexbox;
+        display: none; /* Hide nav initially */
         flex-direction: column;
         background-color: #4CAF50;
         position: absolute;
         top: 60px;
         right: 20px;
-        width: 200px;
+        width: 90%;
         border-radius: 5px;
     }
     nav ul {
@@ -94,15 +103,24 @@ footer {
         text-align: left;
         margin: 0;
         padding: 10px 20px;
+        width: 90%;
     }
     nav ul li a {
         color: white;
     }
 }
-.CONTACT{
+
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+    }
+}
+
+.CONTACT {
     display: flex;
     flex-direction: column;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -171,34 +189,22 @@ form.CONTACT a:hover {
     text-decoration: underline;
 }
 
-.REAL{
+.REAL {
     display: flex;
+    flex-direction: column;
 }
-.RETOUR{
+
+.RETOUR {
     padding-bottom: 10px;
 }
-.project1{
+
+.project1,
+.project2,
+.project3 {
     border-style: solid;
-    background-color:#c1e00f;
+    background-color: #c1e00f;
     padding: 10px;
-    width: 400px;
+    width: 100%;
+    margin-bottom: 10px;
 }
-.project2{
-    border-style: solid;
-    background-color:#c1e00f;
-    padding: 10px;
-    width: 400px;
-}
-.project3{
-    border-style: solid;
-    background-color:#c1e00f;
-    padding: 10px;
-    width: 400px;
-}
-.REAL{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
-    
-}
+
