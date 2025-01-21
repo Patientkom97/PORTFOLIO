@@ -177,3 +177,28 @@ form.CONTACT a:hover {
 .RETOUR{
     padding-bottom: 10px;
 }
+.project1{
+    border-style: solid;
+    background-color:#c1e00f;
+    padding: 10px;
+    width: 400px;
+}
+.project2{
+    border-style: solid;
+    background-color:#c1e00f;
+    padding: 10px;
+    width: 400px;
+}
+.project3{
+    border-style: solid;
+    background-color:#c1e00f;
+    padding: 10px;
+    width: 400px;
+}
+.REAL{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    
+}
