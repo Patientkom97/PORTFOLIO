@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
-   </head>
+</head>
 <body>
     <header class="text-center">
         <h1>Nous Contacter</h1>
     </header>
-    <form class="CONTACT"> 
-        <h1>Nous Contacter</h1> 
-        <label for="name">NOM et POST-NOM</label> 
-        <input type="text" id="name" name="name" placeholder="Veuillez Saisir ici votre nom"> 
-        <label for="phone">Numero de Telephone</label> 
-        <input type="text" id="phone" name="phone" placeholder="+243 000 000 000"> 
+    <form class="CONTACT" action="sendmail.php" method="post">
+        <h1>Nous Contacter</h1>
+        <label for="name">NOM et POST-NOM</label>
+        <input type="text" id="name" name="name" placeholder="Veuillez Saisir ici votre nom">
+        <label for="phone">Numero de Telephone</label>
+        <input type="text" id="phone" name="phone" placeholder="+243 000 000 000">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="exemple@gmail.com"> 
-        <label for="message">Veuillez saisir votre messge ici</label> 
-        <textarea id="message" name="message" rows="4"></textarea> 
-        <button type="submit">Envoyer</button> 
+        <input type="email" id="email" name="email" placeholder="exemple@gmail.com">
+        <label for="message">Veuillez saisir votre messge ici</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit">Envoyer</button>
 
         <div class="RETOUR">
-            <h4><a href="index.html">Revenir à la page d'accueil</a> </h4>
+            <h4><a href="index.html">Revenir à la page d'accueil</a></h4>
         </div>
-</form>
+    </form>
 
-
-<footer>
-    <p>&copy; 2024 Mon Site Web.Patientkom.</p>
-</footer>
-   
-
-    
+    <footer>
+        <p>&copy; 2024 Mon Site Web.Patientkom.</p>
+    </footer>
 </body>
 </html>

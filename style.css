@@ -1,19 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #0c0909;
     margin: 0;
     padding: 0;
+    max-height: 50em;
+    line-height: 1.5;
+    padding: 4em 1em;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #064206;
     color: white;
     padding: 20px;
     text-align: center;
     position: relative;
     
 }
-
+header h1{
+    color:white;
+}
 header img {
     border-radius: 50%;
     margin-top: 10px;
@@ -36,17 +41,24 @@ header img {
 }
 #nav-menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    ;
-}
+    justify-content: center;}
+
 .nav-list {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
-    align-items: center;
+    
+}
+nav ul li{
+    transition: 1s;
+}
+nav ul li:hover{
+    scale: 2;
+    background-color: #161212;
+   border-radius: 5%;
+   rotate: 100px;;
 }
 
 .nav-list li {
@@ -84,11 +96,11 @@ footer {
     }
     body{
         width: 90%;
+        display:flex ;
     }
     nav {
         display: none; /* Hide nav initially */
         flex-direction: column;
-        background-color: #4CAF50;
         position: absolute;
         top: 60px;
         right: 20px;
@@ -128,12 +140,12 @@ body {
     padding: 0;
 }
 
-header {
+ /* header {
     text-align: center;
     background-color: #4CAF50;
     color: white;
     padding: 10px 0;
-}
+}  */
 
 h1 {
     color: #333;
@@ -191,7 +203,7 @@ form.CONTACT a:hover {
 
 .REAL {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
 .RETOUR {
@@ -201,10 +213,23 @@ form.CONTACT a:hover {
 .project1,
 .project2,
 .project3 {
+    display: flex;
     border-style: solid;
     background-color: #c1e00f;
     padding: 10px;
-    width: 100%;
+    width: 400px;
     margin-bottom: 10px;
 }
 
+.filigrane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('votre-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Ajustez l'opacité pour obtenir l'effet désiré */
+    z-index: -1; /* Assurez-vous que le filigrane est derrière le contenu */
+  }
