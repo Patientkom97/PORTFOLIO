@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
 
-
+    
     if (mail($to, $subject, $body, $headers)) {
         echo "Email envoyé avec succès!";
     } else {
