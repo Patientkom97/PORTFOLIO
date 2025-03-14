@@ -32,7 +32,10 @@ header img {
     top: 20px;
     right: 20px;
 }
-
+.Numero {
+    text-align: center;
+    margin: 20%;
+}
 .menu-icon div {
     width: 25px;
     height: 3px;
@@ -203,6 +206,7 @@ form.CONTACT a:hover {
     display: flex;
     justify-content: space-around;
 }
+
 
 .RETOUR {
     padding-bottom: 10px;
