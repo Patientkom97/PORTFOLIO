@@ -59,7 +59,7 @@ nav ul li{
 }
 nav ul li:hover{
     scale: 2;
-    background-color: #161212;
+    /* background-color: #161212; */
    border-radius: 5%;
    rotate: 100px;;
 }
